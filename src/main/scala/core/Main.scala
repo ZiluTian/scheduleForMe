@@ -14,9 +14,9 @@ object entrypoint extends App {
   val schedule = Scheduler(tasks)(Fair)
 
   // Schedule the alarms that ring at the scheduled time
-  // schedule.foreach(x => {
-  //   Alarm.setAlarm(x._2)
-  // })
+  schedule.foreach(x => {
+    Alarm.setAlarm(x._2)
+  })
 }
 
 object Controller {
