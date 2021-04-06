@@ -5,7 +5,6 @@ import java.io.File
 import java.time.LocalTime
 import java.time.temporal.ChronoUnit
 
-
 object Alarm {
   import Scheduler.dtf
 
